@@ -1,0 +1,506 @@
+/* ====================================================================
+Title: Main stylesheet
+Author: Mitch Dunaway
+Creator: Blackbaud
+Description: Entertainment Industry Foundation - Stand Up 2 Cancer
+======================================================================= */
+
+/* Imports
+-----------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'texgyreadventor';
+    src: url('../font/texgyreadventor-regular-webfont.eot');
+    src: url('../font/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/texgyreadventor-regular-webfont.woff') format('woff'),
+         url('../font/texgyreadventor-regular-webfont.ttf') format('truetype'),
+         url('../font/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'texgyreadventor';
+    src: url('../font/texgyreadventor-bold-webfont.eot');
+    src: url('../font/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/texgyreadventor-bold-webfont.woff') format('woff'),
+         url('../font/texgyreadventor-bold-webfont.ttf') format('truetype'),
+         url('../font/texgyreadventor-bold-webfont.svg#texgyreadventorbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texgyreadventor';
+    src: url('../font/texgyreadventor-italic-webfont.eot');
+    src: url('../font/texgyreadventor-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/texgyreadventor-italic-webfont.woff') format('woff'),
+         url('../font/texgyreadventor-italic-webfont.ttf') format('truetype'),
+         url('../font/texgyreadventor-italic-webfont.svg#texgyreadventoritalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'texgyreadventor';
+    src: url('../font/texgyreadventor-bolditalic-webfont.eot');
+    src: url('../font/texgyreadventor-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/texgyreadventor-bolditalic-webfont.woff') format('woff'),
+         url('../font/texgyreadventor-bolditalic-webfont.ttf') format('truetype'),
+         url('../font/texgyreadventor-bolditalic-webfont.svg#texgyreadventorbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Reset
+-----------------------------------------------------------------------*/
+
+/* apply a natural box layout model to all elements */
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+
+html {
+	background: none;
+	height: 100%;
+}
+
+body {	
+	background: none;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	/* have to override border-box for the Less Framework ... yay? */	
+	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	margin: 0 auto;
+}
+
+ul {
+	padding: 0 0 0 40px;
+	margin: 0 0 10px 0;
+}
+
+
+/* Typography
+-----------------------------------------------------------------------*/
+
+body {
+	font: 14px/18px Arial, Helvetica, Verdana, sans-serif;
+	color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'texgyreadventor', "Avant Garde", Avantgarde, sans-serif;
+	line-height: 1.2em;
+	letter-spacing: -.02em;
+	margin: 0 0 .5em;
+}
+
+h1 {
+	font-size: 24px;
+	color: #000;
+	padding: 0 0 .5em 40px;
+	background: url(../img/title_arrow.png) no-repeat 0 3px;
+	border-bottom: 3px solid #CCC;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a,
+a:active,
+a:link,
+a:visited {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* Global Classes
+-----------------------------------------------------------------------*/
+
+.img-replace {
+	display: block;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+
+.abs-pos {
+	position: absolute;
+}
+
+.new-row {
+	clear: left;
+}
+
+/* Main Structure
+-----------------------------------------------------------------------*/
+
+html {
+	background: url('../img/bkgnd.jpg') repeat-x 50% 20px;
+}
+
+body {
+	
+}
+
+/* Header
+-----------------------------------------------------------------------*/
+
+header.top-level {
+	height: 88px;
+}
+
+#logo,
+#tagline,
+#donate_button {
+	float: left;
+}
+
+#logo {
+	background: url(../img/stand-up-to-cancer.png) 0 0 no-repeat;
+	height: 49px;
+	width: 116px;
+	margin: 10px 0 0;
+}
+
+#tagline {
+	background: url(../img/end-of-cancer.png) 0 0 no-repeat;
+	height: 49px;
+	width: 337px;
+	margin: 10px 0 0;
+}
+
+#donate_button {
+	background: url(../img/donate-header.png) 0 0 no-repeat;
+	height: 29px;
+	width: 174px;
+	margin: 18px 0 0 10px;
+}
+
+#login_wrap {
+	float: right;
+	width: 270px;
+	padding: 7px 0 0;
+	font-size: 12px;
+}
+
+#login_wrap div {
+	display: block;
+	clear: left;
+}
+
+#login_wrap div > * {
+	float: left;
+}
+
+#login_wrap label {
+	width: 80px;
+	padding: .2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 .2em 0;
+	display: block;
+}
+
+#login_wrap input[type="text"],
+#login_wrap input[type="password"] {
+	background: transparent;
+	border: 1px solid #CCC;
+	width: 100px;
+}
+
+#forgot_password {
+	padding-left: 85px;
+	text-decoration: underline;
+}
+
+#forgot_password:hover {
+	text-decoration: none;
+}
+
+#login {
+	background: url(../img/log-in.png) 0 0 no-repeat;
+	border: none;
+	display: block;
+	width: 71px;
+	height: 31px;
+	text-indent: -999999px;
+	overflow: hidden;
+	margin: 0 0 0 5px;
+}
+
+#login:hover {
+	background-position: 0 -32px;
+}
+
+#forgot_password,
+#login {
+	position: relative;
+	top: -6px;
+}
+
+/* Navigation
+-----------------------------------------------------------------------*/
+
+nav.top-level {
+	height: 36px;
+	padding: 5px 0; 
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+nav.top-level a,
+nav.top-level a:link,
+nav.top-level a:visited {
+	color: #000;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 3px 16px;
+	margin: 0 5px;
+	font-weight: bold;
+	line-height: 18px
+}
+
+nav.top-level a:hover,
+nav.top-level a:active {
+	color: #ff6600;
+	background: #FFF;
+	border: 1px solid #A7A7A7;
+	padding: 2px 15px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+/* Main
+-----------------------------------------------------------------------*/
+
+main {
+	margin-top: 2em;
+}
+
+.readout {
+	border: 1px solid #CCC;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px 10px 40px;
+	float: left;
+	width: 46%;
+	margin: 10px 2%;
+
+	background: -moz-linear-gradient(top,  #ffffff 0%, #EEE 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#EEE));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#EEE 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#EEE 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#EEE 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#EEE 100%);
+	
+}
+
+.readout h3 {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 0 15px 0;
+	padding: 0 0 0 22px;
+	color: #45465b;
+	background: url(../img/h3arrow.png) no-repeat;
+	text-transform: uppercase;
+}
+
+.readout table {
+	width: 100%;
+}
+
+
+
+/* Sidebar
+-----------------------------------------------------------------------*/
+
+aside.col-box {
+	margin-top: 2em;
+	font: 12px/1.2em Arial, Helvetica, sans-serif;
+	float: right;
+}
+
+aside section {
+	border: 1px solid #c1c1c1;
+	padding: 10px;
+	margin: 10px 0;
+	clear: both;
+}
+
+aside section:first-child {
+	margin-top: 0;
+}
+
+aside section h3 {
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+aside section .sidebar-content {
+	padding: 10px;
+	background: #e8e8e8;
+	font-size: 12px;
+	line-height: 16px;
+
+}
+
+/* Footer
+-----------------------------------------------------------------------*/
+
+footer.top-level {
+	height: 130px;
+	margin-top: 2em;
+	clear: both;
+	position: relative;
+}
+
+#fine_print {
+	font-size: 11px;
+	line-height: 14px;
+	width: 700px;
+}
+
+#fine_print a,
+#fine_print a:active,
+#fine_print a:link,
+#fine_print a:visited {
+	color: #000;
+}
+
+#fine_print a strong,
+#fine_print a:active strong,
+#fine_print a:link strong,
+#fine_print a:visited strong{
+	color: #ed2225;
+}
+
+#logo_blackbaud {
+	margin: 1em 0 0;
+}
+
+#logo_charity_navigator {
+	top: 10px;
+	right: 80px;
+}
+
+#logo_bbb {
+	top: 10px;
+	right: 10px;
+}
+
+/* Responsiveness
+-----------------------------------------------------------------------*/
+
+@viewport{
+	width: extend-to-zoom;
+    zoom: 1.0;    
+}
+
+/* 8 col */
+@media only screen and (max-width: 991px) {
+
+	#tagline,
+	#logo_charity_navigator,
+	#logo_bbb {
+		display: none;
+	}
+
+	#donate_button {
+		margin-left: 110px;
+	}
+
+	#fine_print {
+		width: inherit;
+	}
+
+}
+
+/* 5 col */
+@media only screen and (max-width: 767px) {
+
+	#donate_button {
+		display: none;
+	}
+
+}
+
+/* 3 col */
+@media only screen and (max-width: 479px) {
+	
+	html {
+		background: none;
+	}
+
+	#logo {
+		float: none;
+		margin: .5em auto 0;
+	}
+
+
+	#login {
+		display: none;
+	}
+
+	nav.top-level {
+		height: auto;
+	}
+
+	nav.top-level li {
+		float: none;
+	}
+
+	nav.top-level a,	
+	nav.top-level a:link,
+	nav.top-level a:visited {
+		margin: 0;
+		text-align: center;
+	}
+
+	.readout {
+
+		float: none;
+		width: 100%;
+		margin: 10px 0;
+
+		
+	}
+	
+}
+
+
+
