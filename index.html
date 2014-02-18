@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- ---------------------------------------------------------------- 
+	ALL THIS POOP COMES FROM LUMINATE
+	 ---------------------------------------------------------------- -->
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="Keywords" content=" " />
+	<meta name="Description" content="" />
+	<meta name="Robots" content="index, follow" />
+
+	<script type="text/javascript" src="http://vateam.convio.net/yui3/yui/yui-min.js"></script><noscript>&nbsp;</noscript>
+	<script type="text/javascript" src="http://vateam.convio.net/js/convio/modules.js?version=2.9"></script><noscript>&nbsp;</noscript>
+	<script type="text/javascript">
+		var Y = YUI({base: 'http://vateam.convio.net/yui3/',
+		insertBefore: 'yui_marker_loader_css', // insert all YUI module css before customstyle so it can be overridden
+		debug: false, 
+		modules: getModules('http://vateam.convio.net/', 'convio', false) });
+	</script><noscript>&nbsp;</noscript>
+
+	<script type="text/javascript" src="http://vateam.convio.net/js/utils.js"></script><noscript>&nbsp;</noscript>
+
+	<script type="text/javascript" src="http://vateam.convio.net/js/obs_comp_rollup.js"></script><noscript>&nbsp;</noscript>
+
+
+	<link href="http://vateam.convio.net/css/themes/default.css" rel="stylesheet" type="text/css" />
+	<link href="http://vateam.convio.net/css/themes/alphacube.css" rel="stylesheet" type="text/css"/>
+
+	<link href="http://vateam.convio.net/css/UserGlobalStyle.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" id="yui_marker_loader_css" />
+	<link href="http://vateam.convio.net/css/CustomStyle.css" rel="stylesheet" type="text/css" />
+	<link href="http://vateam.convio.net/css/CustomWysiwygStyle.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/ResponsiveBase.css"/>
+	<link rel="stylesheet" href="css/TRPageResponsive.css"/>
+
+	<meta name="CnvHeaderVersion" content="v5.0" />
+
+	<!-- ---------------------------------------------------------------- 
+	ALL THAT POOP CAME FROM LUMINATE
+	 ---------------------------------------------------------------- -->
+
+	<title></title>
+	<!-- reus_wrpr_XXXX_head -->
+	
+	<!-- Setting the TeamRaiser ID in a Session Variable 
+	[[S51:reus_set_tr_id]]
+	-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1">	
+	<meta name="author" content="Mitchell Dunaway">
+	<meta name="creator" content="Blackbaud">
+
+	<!-- Meta Description 
+	[[S51:reus_meta_description]]
+	-->
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	    
+	<!-- JavaScript Files -->
+	<script src="js/scripts.js"></script>
+
+
+	<!-- Open Graph properties 
+	[[S51:su2c_reus_facebook_meta]]
+	-->
+
+</head>
+<body class="[[?xxtruex::x[[S80:mobile]]x::mobile::]]">
+
+	<header class="top-level">
+		<div class="inner">
+
+			<!-- su2c_reus_logo -->
+			<a id="logo" class="img-replace" href="/" title="Stand Up To Cancer">Stand Up To Cancer</a>
+
+			<!-- su2c_reus_tagline -->
+			<a id="tagline" class="img-replace" href="/" title="This is where the end of cancer begins">This is where the end of cancer begins</a>
+
+			<!-- su2c_reus_donate_button -->
+			<a id="donate_button" class="img-replace" href="#donate" title="donate now">Donate Now</a>
+
+			<!-- Log in widget -->
+			<div id="login_wrap"  class="">
+				<form action="UserLogin" id="lLogonForm" name="lLogonForm" method="post">
+					<div>
+						<label for="Username">User Name:</label>
+						<input type="text" name="Username" id="Username" size="8" maxlength="[[S0:USER_MAX_LOGIN_LEN]]" title="User Name" />
+					</div>
+					<div>
+						<label for="Password">Password:</label>
+						<input type="password" name="Password" id="Password" size="8" maxlength="[[S0:USER_MAX_PASSWD_LEN]]" title="Password" />
+						<input type="submit" name="login" id="login" value="Login" />
+					</div>
+					<div>
+						<a href="#" id="forgot_password">Forgot your Password?</a>
+					</div>
+				</form>
+			</div>
+			<!-- /Log in widget -->
+
+		</div><!-- /.inner -->
+	</header>
+
+	<nav class="top-level">
+		<ul class="clearfix">			
+			<li><a href="#">Event Home</a></li>
+			<li><a href="#">About Events</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<div id="content">
+
+		<!-- S63 
+			[[S63:3]]
+		-->
+
+		<form id="temp_wrapper_options">
+			<div>
+				<label for="f4">User Session:</label>
+				<select id="user_session">
+					<option value="0">Logged Out</option>
+					<option value="1">Logged In</option>
+				</select>
+			</div>
+			<div>
+				<label for="f4">Sidebar:</label>
+				<select id="show_sidebar">
+					<option value="1">Show</option>
+					<option value="0">Hide</option>
+				</select>
+			</div>
+		</form>
+
+		<div id="sidebar">
+
+			<img src="img/donate-burst.gif" alt="100% of your donation goes to saving lives now" style="width: 100%;">			
+
+			<section>
+				<h3>Where the Money <strong>Goes</strong></h3>
+				<div class="sidebar-content">
+					When you donate, you join the millions who have helped us fund:
+					<ul>
+						<li>SU2C <a href="http://www.standup2cancer.org/su2c/about_us/scientific_dream_teams" target="_blank">DREAM TEAMS</a> focusing on research to accelerate new treatments for patients</li>
+						<li>Innovative, <a href="http://www.standup2cancer.org/su2c/about_us/innovative_grants" target="_blank">OUT-OF-THE-BOX RESEARCH GRANTS</a> for underfunded young scientists</li>
+						<li>Read more about <a href="http://www.standup2cancer.org/su2c/money" target="_blank">WHERE THE MONEY GOES</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h3>Other Ways to <strong>Donate</strong></h3>
+				<div class="sidebar-content">
+					In addition to online, you can donate to cancer research by phone or mail.
+					<p>
+						<a href="http://www.standup2cancer.org/custom/?c=donate&amp;a=otherways" target="_blank">FIND OUT MORE</a>
+					</p>
+				</div>
+			</section>
+
+			<section>
+				<h3>Your Information is Secure</h3>
+				<div class="sidebar-secure">
+					We process all donations using an industry standard, SSL encrypted payment system.
+					<table width="115" border="0" cellpadding="0" cellspacing="0" title="Click to Verify - This site chose VeriSign SSL for secure e-commerce and confidential communications.">
+						<tbody>
+							<tr>
+								<td width="115" align="center" valign="top">
+									<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=secure.standup2cancer.org&amp;size=M&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script>
+
+									<!-- <a href="javascript:vrsn_splash()" tabindex="-1"><img name="seal" border="true" src="https://seal.verisign.com/getseal?at=0&amp;sealid=1&amp;dn=secure.standup2cancer.org&amp;lang=en" oncontextmenu="return false;" alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security"></a> -->
+
+									<br>
+
+									<a href="http://www.verisign.com/ssl-certificate/" target="_blank" style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div><!-- /#sidebar -->
+	</div><!-- /#content -->
+	<footer class="top-level">
+		<div class="inner">
+					
+			<div id="footer_copyright">
+				&copy; <strong>[[S9:pattern:yyyy]] SU2C</strong>
+			</div>
+
+			<nav id="footer_nav">
+				<ul>			
+					<li><a href="http://www.standup2cancer.org/site/contact">Contact Us</a></li>
+					<li><a href="http://www.standup2cancer.org/privacypolicy">Privacy Policy</a> </li>
+					<li><a href="http://www.standup2cancer.org/tos">Terms of Service</a></li>
+					<li><a href="http://www.standup2cancer.org/where_the_money_goes">Where the Money Goes. And Why.</a></li>
+					<li><a href="http://www.standup2cancer.org/about_us">About Us</a></li>
+					<li><a href="http://www.standup2cancer.org/su2c_team">SU2C Team</a></li>
+					<li><a href="http://www.standup2cancer.org/faq">FAQ</a></li>
+					<li><a href="http://www.unidoscontraelcancer.org/" target="_blank">En Español</a></li>
+					<li><a href="http://vmesteprotivraka.ru" target="_blank">pyccкий</a></li>
+					<li><a href="http://www.standup2cancer.org/press/" class="press"><strong>Press Center</strong></a></li>
+				</ul>
+			</nav>
+
+			<div id="eif_statement">
+				Stand Up To Cancer is a program of the <a href="http://www.eifoundation.org/" target="_blank">Entertainment Industry Foundation (EIF)</a>, a 501(c)(3) tax-exempt organization. EIF meets all 20 BBB Charity Standards.
+				<br>
+				Stand Up To Cancer and Stand Up To Cancer Brand Marks are registered trademarks of EIF.
+			</div>
+			
+			<a id="logo_blackbaud" href="http://www.convio.com/poweredby"><img src="img/poweredbyblackbaud.gif" border="0" alt="[[M0:global:pow_convio_link]]" /></a>
+
+
+			<a id="logo_charity_navigator" href="http://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=3670" target="_blank">
+				<img src="http://www.standup2cancer.org/_www_images/cn_4StarSquareBW.png" alt="Charity Navigator 4 Star Charity">
+			</a>
+
+			<a id="logo_bbb" href="http://charityreports.bbb.org/public/seal.aspx?ID=27302622009" target="_blank">
+					<img src="http://www.standup2cancer.org/_www_images/bbb.png" alt="Better Business Bureau" class="bbb">
+			</a>
+
+		</div><!-- /.inner -->
+	</footer>
+</body>
+</html>

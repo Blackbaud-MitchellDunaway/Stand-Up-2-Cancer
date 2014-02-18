@@ -1,0 +1,9 @@
+[[?xteamx::x[[S334:pg]]x::
+   <meta name="description" content="Team [[E43:[[S334:fr_id]]:name: [[S334:team_id]]]] is proud to be part of Stand Up To Cancer’s groundbreaking initiative created to accelerate innovative cancer research that will get new therapies to patients quickly and save lives now. To learn more, go to: [url=[[S8]][/url].">
+   ::
+      [[?xpersonalx::x[[S334:pg]]x::
+          <meta name="description" content="[[E48:[[S334:fr_id]]-[[S334:px]]:cons.first_name]] is proud to be part of Stand Up To Cancer’s groundbreaking initiative created to accelerate innovative cancer research that will get new therapies to patients quickly and save lives now. To learn more, go to: [url=[[S8]][/url].">
+    ::
+          <meta name="description" content="[[E42:[[S80:trID]]:title]] allows you to contribute to Stand Up To Cancer’s groundbreaking initiative created to accelerate innovative cancer research that will get new therapies to patients quickly and save lives now. To learn more, go to: [url=[[S8]][/url].">
+    ]]
+]]

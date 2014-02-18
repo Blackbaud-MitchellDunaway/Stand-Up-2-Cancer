@@ -1,0 +1,37 @@
+<!-- Open Graph Image -->
+[[?xteamxpersonalx::x[[S334:pg]]x::
+  [[?
+      [[?xx::x[[C4:graphic_upload]]x:: ::T]]
+      ::T::
+        <meta property="og:image" content="http://[[S29:DOMAIN]][[S29:PATH]][[C4:graphic_upload]]">
+      :: 
+         <meta property="og:image" content="path to og:image SU2C logo when available">
+  ]]
+::
+  <meta property="og:image" content=" path to og:image SU2C logo when available">
+]]
+
+<!-- Open Graph URL -->
+<meta property="og:url" content="[[S8]]">
+
+<!-- Open Graph Title -->
+[[?xteamx::x[[S334:pg]]x::
+   <meta property="og:title" content="Team [[E43:[[S334:fr_id]]:name: [[S334:team_id]]]] | Stand Up To Cancer">
+   ::
+      [[?xpersonalx::x[[S334:pg]]x::
+          <meta property="og:title" content[[E48:[[S334:fr_id]]-[[S334:px]]:cons.first_name]]&#8217;ss Stand | Stand Up To Cancer">
+    ::
+          <meta property="og:title" content="[[E42:[[S80:trID]]:title]] | Stand Up To Cancer">
+   ]]
+]]
+
+<!-- Open Graph Description -->
+[[?xteamx::x[[S334:pg]]x::
+   <meta property="og:description" content="Team [[E43:[[S334:fr_id]]:name: [[S334:team_id]]]] is proud to be part of Stand Up To Cancer’s groundbreaking initiative created to accelerate innovative cancer research that will get new therapies to patients quickly and save lives now. To learn more about the team, go to: [url=[[S8]][/url].">
+   ::
+      [[?xpersonalx::x[[S334:pg]]x::
+          <meta property="og:description" content="[[E48:[[S334:fr_id]]-[[S334:px]]:cons.first_name]] is proud to be part of Stand Up To Cancer’s groundbreaking initiative created to accelerate innovative cancer research that will get new therapies to patients quickly and save lives now. To learn more about the team, go to: [url=[[S8]] [/url].">
+    ::
+          <meta property="og:description" content="[[E42:[[S80:trID]]:title]] is allows you to contribute to Stand Up To Cancer’s groundbreaking initiative created to accelerate innovative cancer research that will get new therapies to patients quickly and save lives now. To learn more about the team, go to: [url=[[S8]][/url].">
+  ]]
+]]
