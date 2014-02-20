@@ -1,0 +1,39 @@
+<footer class="top-level">
+	<div class="inner">
+				
+		<div id="footer_copyright">
+			&copy; <strong>[[S9:pattern:yyyy]] SU2C</strong>
+		</div>
+
+		<nav id="footer_nav">
+			<ul>			
+				<li><a href="http://www.standup2cancer.org/site/contact">Contact Us</a></li>
+				<li><a href="http://www.standup2cancer.org/privacypolicy">Privacy Policy</a> </li>
+				<li><a href="http://www.standup2cancer.org/tos">Terms of Service</a></li>
+				<li><a href="http://www.standup2cancer.org/where_the_money_goes">Where the Money Goes. And Why.</a></li>
+				<li><a href="http://www.standup2cancer.org/about_us">About Us</a></li>
+				<li><a href="http://www.standup2cancer.org/su2c_team">SU2C Team</a></li>
+				<li><a href="http://www.standup2cancer.org/faq">FAQ</a></li>
+				<li><a href="http://www.standup2cancer.org/press/" class="press"><strong>Press Center</strong></a></li>
+			</ul>
+		</nav>
+
+		<div id="eif_statement">
+			Stand Up To Cancer is a program of the <a href="http://www.eifoundation.org/" target="_blank">Entertainment Industry Foundation (EIF)</a>, a 501(c)(3) tax-exempt organization.<br/>
+			EIF meets all 20 BBB Charity Standards.<br>				
+			Stand Up To Cancer and Stand Up To Cancer Brand Marks are registered trademarks of EIF.
+		</div>
+		
+		<a id="logo_blackbaud" href="http://www.convio.com/poweredby"><img src="images/poweredbyblackbaud.gif" border="0" alt="[[M0:global:pow_convio_link]]" /></a>
+
+		<!-- su2c_reus_footer_logos -->
+		<a id="logo_charity_navigator" href="http://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=3670" target="_blank">
+			<img src="http://www.standup2cancer.org/_www_images/cn_4StarSquareBW.png" alt="Charity Navigator 4 Star Charity">
+		</a>
+
+		<a id="logo_bbb" href="http://charityreports.bbb.org/public/seal.aspx?ID=27302622009" target="_blank">
+				<img src="http://www.standup2cancer.org/_www_images/bbb.png" alt="Better Business Bureau" class="bbb">
+		</a>
+
+	</div><!-- /.inner -->
+</footer>
