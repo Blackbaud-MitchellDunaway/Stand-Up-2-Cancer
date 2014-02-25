@@ -1,0 +1,45 @@
+<img src="images/donate-burst.gif" alt="100% of your donation goes to saving lives now" style="width: 100%;">			
+
+<section>
+	<h3>Where the Money <strong>Goes</strong></h3>
+	<div class="sidebar-content">
+		When you donate, you join the millions who have helped us fund:
+		<ul>
+			<li>SU2C <a href="http://www.standup2cancer.org/su2c/about_us/scientific_dream_teams" target="_blank">DREAM TEAMS</a> focusing on research to accelerate new treatments for patients</li>
+			<li>Innovative, <a href="http://www.standup2cancer.org/su2c/about_us/innovative_grants" target="_blank">OUT-OF-THE-BOX RESEARCH GRANTS</a> for underfunded young scientists</li>
+			<li>Read more about <a href="http://www.standup2cancer.org/su2c/money" target="_blank">WHERE THE MONEY GOES</a></li>
+		</ul>
+	</div>
+</section>
+
+<section>
+	<h3>Other Ways to <strong>Donate</strong></h3>
+	<div class="sidebar-content">
+		In addition to online, you can donate to cancer research by phone or mail.
+		<p>
+			<a href="http://www.standup2cancer.org/custom/?c=donate&amp;a=otherways" target="_blank">FIND OUT MORE</a>
+		</p>
+	</div>
+</section>
+
+<section>
+	<h3>Your Information is Secure</h3>
+	<div class="sidebar-secure">
+		We process all donations using an industry standard, SSL encrypted payment system.
+		<table width="115" border="0" cellpadding="0" cellspacing="0" title="Click to Verify - This site chose VeriSign SSL for secure e-commerce and confidential communications.">
+			<tbody>
+				<tr>
+					<td width="115" align="center" valign="top">
+						<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=secure.standup2cancer.org&amp;size=M&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script>
+
+						<!-- <a href="javascript:vrsn_splash()" tabindex="-1"><img name="seal" border="true" src="https://seal.verisign.com/getseal?at=0&amp;sealid=1&amp;dn=secure.standup2cancer.org&amp;lang=en" oncontextmenu="return false;" alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security"></a> -->
+
+						<br>
+
+						<a href="http://www.verisign.com/ssl-certificate/" target="_blank" style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>

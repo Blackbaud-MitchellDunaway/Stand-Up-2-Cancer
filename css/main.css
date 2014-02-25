@@ -80,13 +80,26 @@ body {
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	margin: 0 auto;
-	font: 14px/18px Arial, Helvetica, Verdana, sans-serif;
-	color: #333;
+
 }
 
 
 /* Typography
 -----------------------------------------------------------------------*/
+
+body,
+p, 
+table, 
+tr, 
+th, 
+td,
+li,
+ol,
+ul 
+.Explicit {	
+	font: 14px/18px Arial, Helvetica, sans-serif;
+	color: #333;
+}
 
 h1,
 h2,
@@ -130,7 +143,7 @@ a:hover {
 
 .img-replace {
 	display: block;
-	text-indent: -9999em;
+	text-indent: -99999px;
 	text-align: left !important;
 	overflow: hidden;
 }
@@ -240,7 +253,7 @@ header.top-level {
 #login_wrap input[type="password"] {
 	background: #FFF;
 	border: 1px solid #CCC;
-	width: 90px;
+	width: 85px;
 }
 
 #login_button {
@@ -248,7 +261,7 @@ header.top-level {
 	border: none;
 	width: 71px;
 	height: 31px;
-	text-indent: -999999px;
+	padding: 0 0 0 71px;
 	overflow: hidden;
 }
 
@@ -277,7 +290,7 @@ header.top-level {
 	display: block;
 	font-weight: bold;
 	margin: 7px 10px 0px 0px;
-	width: 170px;
+	width: 160px;
 }
 
 #login_salutation,
@@ -323,6 +336,7 @@ nav li a {
 #main_navigation a:active {
 	color: #000;
 	font-size: 14px;
+	font-weight: bold;
 	text-transform: uppercase;
 	padding: 3px 16px;
 	margin: 0 5px;
@@ -436,7 +450,7 @@ footer.top-level {
 }
 
 footer.top-level .inner {
-	padding-right: 210px;
+	/*padding-right: 210px;*/
 }
 
 footer.top-level,
@@ -502,7 +516,8 @@ footer.top-level a:visited strong{
 
 @media only screen and (max-width: 991px) {
 
-	#tagline {
+	#tagline,
+	#sidebar {
 		display: none;
 	}
 
@@ -568,7 +583,7 @@ footer.top-level a:visited strong{
 		height: 73px;
 		width: 100%;
 		position: absolute;
-		top: 100%;
+		bottom: -74px;
 		left: 0;
 		pointer-events: none;
 		background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
@@ -705,18 +720,12 @@ footer.top-level a:visited strong{
 		float: left;
 	}
 
-
-
-
-
-
-
 }
 
 @media only screen and (max-width: 479px) {
-	
-	#sidebar {
-		display: none;
+
+	#logo_blackbaud {
+		float: none;
 	}
 	
 }

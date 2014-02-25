@@ -1,0 +1,1 @@
+<a id="logo" class="img-replace" href="http://www.standup2cancer.org/" title="Stand Up To Cancer">Stand Up To Cancer</a>

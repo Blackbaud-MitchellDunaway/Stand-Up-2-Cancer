@@ -1,0 +1,10 @@
+<ul>			
+	<li><a href="http://www.standup2cancer.org/site/contact">Contact Us</a></li>
+	<li><a href="http://www.standup2cancer.org/privacypolicy">Privacy Policy</a> </li>
+	<li><a href="http://www.standup2cancer.org/tos">Terms of Service</a></li>
+	<li><a href="http://www.standup2cancer.org/where_the_money_goes">Where the Money Goes. And Why.</a></li>
+	<li><a href="http://www.standup2cancer.org/about_us">About Us</a></li>
+	<li><a href="http://www.standup2cancer.org/su2c_team">SU2C Team</a></li>
+	<li><a href="http://www.standup2cancer.org/faq">FAQ</a></li>
+	<li><a href="http://www.standup2cancer.org/press/" class="press"><strong>Press Center</strong></a></li>
+</ul>

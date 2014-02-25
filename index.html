@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<!-- ---------------------------------------------------------------- 
+	<!-- -----------------------------------------------------------------
 	ALL THIS POOP COMES FROM LUMINATE
 	 ---------------------------------------------------------------- -->
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -44,35 +44,26 @@
 	 ---------------------------------------------------------------- -->
 
 	<title></title>
-	<!-- reus_wrpr_XXXX_head -->
+	<!-- su2c_reus_head -->
 	
-	<!-- Setting the TeamRaiser ID in a Session Variable 
-	[[S51:reus_set_tr_id]]
+	<!-- Open Graph properties 
+	[[S51:su2c_reus_facebook_meta]]
 	-->
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1">	
-	<meta name="author" content="Mitchell Dunaway">
-	<meta name="creator" content="Blackbaud">
-
-	<!-- Meta Description 
-	[[S51:reus_meta_description]]
-	-->
+	<meta name="viewport" content="initial-scale=1">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
-
-	<!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	    
 	<!-- JavaScript Files -->
+	<script src="js/html5shiv.js"></script>
+	<script src="js/html5shiv-printshiv.js"></script>
 	<script src="js/scripts.js"></script>
 
-
-	<!-- Open Graph properties 
-	[[S51:su2c_reus_facebook_meta]]
+	<!-- Setting the TeamRaiser ID in a Session Variable 
+	[[S51:su2c_reus_set_tr_id]]
 	-->
 
 </head>
@@ -80,33 +71,21 @@
 
 	<header class="top-level">
 		<div class="inner">
-
+			
 			<!-- su2c_reus_logo -->
-			<a id="logo" class="img-replace" href="/" title="Stand Up To Cancer">Stand Up To Cancer</a>
+			<a id="logo" class="img-replace" href="http://www.standup2cancer.org/" title="Stand Up To Cancer">Stand Up To Cancer</a>
 
 			<!-- su2c_reus_tagline -->
-			<a id="tagline" class="img-replace" href="/" title="This is where the end of cancer begins">This is where the end of cancer begins</a>
+			<a id="tagline" class="img-replace" href="http://www.standup2cancer.org/" title="This is where the end of cancer begins">This is where the end of cancer begins</a>
 
 
 			<div id="social_share">
 
 				<!-- su2c_reus_facebook_like -->
-				<div id="fb-root"></div>
+				<img class="fb_iframe_widget" src="images/temp_facebook.gif" />
 
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-
-				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-
-				<!-- su2c_twitter_follow -->
-				<a href="https://twitter.com/su2c" class="twitter-follow-button" data-show-count="false">Follow @su2c</a>
-
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<!-- su2c_reus_twitter_follow -->
+				<img src="images/temp_twitter.gif" />
 
 			</div><!-- /#social_share -->
 
@@ -116,26 +95,25 @@
 
 				<!-- su2c_reus_donate_button -->
 				<a id="donate_button" class="img-replace" href="#donate" title="donate now">Donate Now</a>
-
-				<!-- su2c_reus_nav -->
+				
 				<nav id="main_navigation">
+					<!-- su2c_reus_nav -->
 					<ul>			
 						<li><a href="#">Event Home</a></li>
 						<li><a href="#">About Events</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
 				</nav>
-
-				<!-- su2c_reus_log_in -->
+				
 				<div id="login_wrap"  class="">
-					
+					<!-- su2c_reus_log_in -->
 					<form action="UserLogin" id="lLogonForm" name="lLogonForm" method="post">
 						<input type="text" name="USERNAME" id="USERNAME" size="8" maxlength="[[S0:USER_MAX_LOGIN_LEN]]" title="User Name" value="User Name"/>
 						<input type="password" name="Password" id="Password" size="8" maxlength="[[S0:USER_MAX_PASSWD_LEN]]" title="Password" value="Password"/>
 						<input type="submit" name="login" id="login_button" value="Login" />
 						<input type="hidden" name="NEXTURL" value="[[S8]]"/>
 						<a href="UserLogin">Forgot password?</a>
-						<a href="GigyaLogin">Login Using</a>
+						<a href="GigyaLogin">Login Using <img src="images/temp_gigya.gif" alt="gigya temp"></a>
 					</form>
 
 					<div id="login_logged_in">
@@ -157,9 +135,9 @@
 	<div id="content" class="top-level">
 		<div class="inner">
 
-			<!-- su2c_reus_don_right_rail -->
+			
 			<div id="sidebar">
-
+				<!-- su2c_reus_don_right_rail -->
 				<img src="images/donate-burst.gif" alt="100% of your donation goes to saving lives now" style="width: 100%;">			
 
 				<section>
@@ -236,15 +214,18 @@
 		</div><!-- /.inner -->
 	</div><!-- /#content -->
 
-	<!-- su2c_reus_footer -->
+	
 	<footer class="top-level">
 		<div class="inner">
-					
+			<!-- su2c_reus_footer -->
+
 			<div id="footer_copyright">
+				<!-- su2c_reus_footer_copyright -->
 				&copy; <strong>2008-2014, Entertainment Industry Foundation (EIF).</strong>
 			</div>
 
 			<nav id="footer_nav">
+				<!-- su2c_reus_footer_nav -->
 				<ul>			
 					<li><a href="http://www.standup2cancer.org/site/contact">Contact Us</a></li>
 					<li><a href="http://www.standup2cancer.org/privacypolicy">Privacy Policy</a> </li>
@@ -258,11 +239,12 @@
 			</nav>
 
 			<div id="eif_statement">
+				<!-- su2c_reus_footer_eif_statement -->
 				Stand Up To Cancer is a program of the <a href="http://www.eifoundation.org/" target="_blank">Entertainment Industry Foundation (EIF)</a>, a 501(c)(3) tax-exempt organization.<br/>
 				EIF meets all 20 BBB Charity Standards.<br>				
 				Stand Up To Cancer and Stand Up To Cancer Brand Marks are registered trademarks of EIF.
-			</div>
-			
+			</div>			
+
 			<a id="logo_blackbaud" href="http://www.convio.com/poweredby"><img src="images/poweredbyblackbaud.gif" border="0" alt="[[M0:global:pow_convio_link]]" /></a>
 
 			<!-- su2c_reus_footer_logos -->
