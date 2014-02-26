@@ -152,7 +152,7 @@ a:hover {
 	position: relative;
 	padding: 0 20px;
 	height: inherit;
-	max-width: 1020px;
+	width: 1020px;
 	margin: 0 auto;
 }
 
@@ -261,8 +261,6 @@ header.top-level {
 	border: none;
 	width: 71px;
 	height: 31px;
-	padding: 0 0 0 71px;
-	overflow: hidden;
 }
 
 #login_button:hover {
@@ -436,10 +434,13 @@ main {
 #sidebar section .sidebar-content {
 	padding: 10px;
 	background: #e8e8e8;
-	font-size: 12px;
-	line-height: 16px;
-
 }
+
+#sidebar section .sidebar-content,
+#sidebar section .sidebar-content li {
+	font: 12px/16px Arial, Helvetica, sans-serif;
+}
+
 
 /* Footer
 -----------------------------------------------------------------------*/
@@ -458,7 +459,7 @@ footer.top-level a,
 footer.top-level a:active,
 footer.top-level a:link,
 footer.top-level a:visited {
-	font-size: 9px;
+	font-size: 11px;
 	line-height: 1.5em;
 	color: #333;
 }
@@ -471,14 +472,13 @@ footer.top-level a:visited strong{
 }
 
 #footer_nav {
-	margin: .4em 0;
+
 }
 
 #footer_nav a {
 	padding: 0 .5em;
 	border-left: 1px solid #333;
 	line-height: 1em;
-	display: inline;
 }
 
 #footer_nav ul li:first-child a {
@@ -512,6 +512,15 @@ footer.top-level a:visited strong{
 @viewport{
 	width: extend-to-zoom;
     zoom: 1.0;    
+}
+
+@media only screen and (min-width: 0) {
+
+	.top-level > .inner {
+		width: auto;
+		max-width: 1020px;
+	}
+
 }
 
 @media only screen and (max-width: 991px) {
