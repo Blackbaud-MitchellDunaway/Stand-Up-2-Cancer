@@ -9,3 +9,7 @@ TO DO
 - Font size in the bulleted items in the sidebar is too large.
  
 - I’d recommend setting up some bulleted and numbered lists with the greeked text in the body of the page to ensure that the layout and fonts are good for them. Probably not a bad idea to check the headings as well. I see you’re pulling in styles for them from the SU2C site. Yay, you!
+
+- Apply text transform to uppercase for H1L
+- Looks like their H2 and less are Arial rather than Avant Guard (see the attached spreadsheet I grabbed from their site)
+- I don’t want to reproduce all of their variations on H tags, but let’s grab the basic ones – H1 – H5 – since that is what they have.
