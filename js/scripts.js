@@ -5,7 +5,8 @@ Y.use('jquery-noconflict', function() {
 		/* temporary element toggles
 		------------------------------------------------------------ */
 		$('#login_logged_in').hide();
-
+		$('#sidebar').hide();
+		
 		$('#user_session').change(function(){
 			if($(this).val() === "1") {
 				$('#lLogonForm').hide();
@@ -16,11 +17,18 @@ Y.use('jquery-noconflict', function() {
 			}
 		})
 
+		function hide_sidebar(){
+			$('#sidebar').hide();
+			$('head').remove('#donations_styles');
+		}
+
 		$('#show_sidebar').change(function(){
 			if($(this).val() === "1") {
 				$('#sidebar').show();
+				$('head').append('<link id="donations_styles" rel="stylesheet" href="css/donations.css"/>');
 			} else {
 				$('#sidebar').hide();
+				$('#donations_styles').remove();
 			}
 		})
 

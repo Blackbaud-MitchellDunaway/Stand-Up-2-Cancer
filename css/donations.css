@@ -1,0 +1,92 @@
+/* ====================================================================
+Title: Donations stylesheet
+Author: Mitch Dunaway
+Creator: Blackbaud
+Description: Entertainment Industry Foundation - Stand Up 2 Cancer
+======================================================================= */
+
+/* Content
+-----------------------------------------------------------------------*/
+
+main {
+	float: left;
+	width: 70%;
+}
+
+/* Sidebar
+-----------------------------------------------------------------------*/
+
+#sidebar {
+	font: 12px/1.2em Arial, Helvetica, sans-serif;
+	float: left;
+	margin-left: 1%;
+	width: 29%;
+}
+
+#sidebar section {
+	border: 1px solid #c1c1c1;
+	padding: 10px;
+	margin: 10px 0;
+	clear: both;
+}
+
+#sidebar section:first-child {
+	margin-top: 0;
+}
+
+#sidebar section h3 {
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#sidebar section .sidebar-content {
+	padding: 10px;
+	background: #e8e8e8;
+}
+
+#sidebar section .sidebar-content,
+#sidebar section .sidebar-content li {
+	font: 12px/16px Arial, Helvetica, sans-serif;
+}
+
+/* Responsiveness
+-----------------------------------------------------------------------*/
+
+@viewport{
+	width: extend-to-zoom;
+    zoom: 1.0;    
+}
+
+@media only screen and (min-width: 0) {
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	main {
+		float: none;
+		width: auto;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+
+}
+
+@media only screen and (max-width: 479px) {
+
+
+	
+}
+
+
+

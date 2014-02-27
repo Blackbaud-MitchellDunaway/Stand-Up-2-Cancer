@@ -1,5 +1,5 @@
 /* ====================================================================
-Title: Main stylesheet
+Title: Main Wrapper Stylesheet
 Author: Mitch Dunaway
 Creator: Blackbaud
 Description: Entertainment Industry Foundation - Stand Up 2 Cancer
@@ -297,6 +297,8 @@ header.top-level {
 	background: #FFF;
 	border: 1px solid #CCC;
 	width: 85px;
+	vertical-align: top;
+	margin: 6px 0 0;
 }
 
 #login_button {
@@ -405,86 +407,6 @@ nav li a {
 	min-height: 300px;
 }
 
-main {
-	
-}
-
-/* Team Raiser
------------------------------------------------------------------------*/
-.readout {
-	border: 1px solid #CCC;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	padding: 10px 10px 40px;
-	float: left;
-	width: 46%;
-	margin: 10px 2%;
-
-	background: -moz-linear-gradient(top,  #ffffff 0%, #EEE 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#EEE));
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#EEE 100%);
-	background: -o-linear-gradient(top,  #ffffff 0%,#EEE 100%);
-	background: -ms-linear-gradient(top,  #ffffff 0%,#EEE 100%);
-	background: linear-gradient(to bottom,  #ffffff 0%,#EEE 100%);
-	
-}
-
-.readout h3 {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
-	margin: 0 0 15px 0;
-	padding: 0 0 0 22px;
-	color: #45465b;
-	background: url(../images/h3arrow.png) no-repeat;
-	text-transform: uppercase;
-}
-
-.readout table {
-	width: 100%;
-}
-
-
-
-/* Sidebar
------------------------------------------------------------------------*/
-
-#sidebar {
-	font: 12px/1.2em Arial, Helvetica, sans-serif;
-	width: 250px;
-	float: right;
-	margin-left: 20px;
-}
-
-#sidebar section {
-	border: 1px solid #c1c1c1;
-	padding: 10px;
-	margin: 10px 0;
-	clear: both;
-}
-
-#sidebar section:first-child {
-	margin-top: 0;
-}
-
-#sidebar section h3 {
-	font-weight: normal;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-#sidebar section .sidebar-content {
-	padding: 10px;
-	background: #e8e8e8;
-}
-
-#sidebar section .sidebar-content,
-#sidebar section .sidebar-content li {
-	font: 12px/16px Arial, Helvetica, sans-serif;
-}
-
-
 /* Footer
 -----------------------------------------------------------------------*/
 
@@ -568,8 +490,7 @@ footer.top-level a:visited strong{
 
 @media only screen and (max-width: 991px) {
 
-	#tagline,
-	#sidebar {
+	#tagline {
 		display: none;
 	}
 
@@ -717,7 +638,10 @@ footer.top-level a:visited strong{
 		width: 177px;
 		height: 32px;
 		padding: 10px;
+		margin: 6px auto 0;
 	}
+
+
 
 	#login_button {
 		background: url(../images/log_in_mobile.png) 0 0 no-repeat;
