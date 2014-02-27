@@ -3,4 +3,4 @@ TO DO
 - need to add and style widgets
 	- gigya
 	- social share
--need to upload script and style files and update links
+- add conditionals to load sidebar and donations.css on donation pages.

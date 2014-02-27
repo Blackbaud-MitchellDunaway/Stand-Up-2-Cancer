@@ -1,19 +1,19 @@
 <!-- Open Graph properties -->
-[[S51:su2c_reus_facebook_meta]]
+[[S51:su2c_reus_facebook_meta]]	
 
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1">
 
 <!-- Stylesheets -->
-<link rel="stylesheet" href="css/reset.css"/>
-<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="../EIF/su2c/css/reset.css"/>
+<link rel="stylesheet" href="../EIF/su2c/css/main.css"/>
+[[?x9x1046x::x[[S4]]x::<link rel="stylesheet" href="../EIF/su2c/css/donations.css"/>:: <!-- nothing goes here -->]]
 
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
     
 <!-- JavaScript Files -->
-<script src="js/scripts.js"></script>
+<script src="../EIF/su2c/js/html5shiv.js"></script>
+<script src="../EIF/su2c/js/html5shiv-printshiv.js"></script>
+<script src="../EIF/su2c/js/scripts.js"></script>
 
 <!-- Setting the TeamRaiser ID in a Session Variable -->
 [[S51:su2c_reus_set_tr_id]]

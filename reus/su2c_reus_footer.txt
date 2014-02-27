@@ -14,7 +14,7 @@
 	[[S51:su2c_reus_footer_eif_statement]]
 </div>			
 
-<a id="logo_blackbaud" href="http://www.convio.com/poweredby"><img src="images/poweredbyblackbaud.gif" border="0" alt="[[M0:global:pow_convio_link]]" /></a>
+<a id="logo_blackbaud" href="http://www.convio.com/poweredby"><img src="../EIF/su2c/images/poweredbyblackbaud.gif" border="0" alt="[[M0:global:pow_convio_link]]" /></a>
 
 <!-- su2c_reus_footer_logos -->
 [[S51:su2c_reus_footer_logos]]
