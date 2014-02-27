@@ -2,37 +2,6 @@ Y.use('jquery-noconflict', function() {
 	jQuery(document).ready(function($){
 
 
-		/* temporary element toggles
-		------------------------------------------------------------ */
-		$('#login_logged_in').hide();
-		$('#sidebar').hide();
-		
-		$('#user_session').change(function(){
-			if($(this).val() === "1") {
-				$('#lLogonForm').hide();
-				$('#login_logged_in').show();
-			} else {
-				$('#lLogonForm').show();
-				$('#login_logged_in').hide();
-			}
-		})
-
-		function hide_sidebar(){
-			$('#sidebar').hide();
-			$('head').remove('#donations_styles');
-		}
-
-		$('#show_sidebar').change(function(){
-			if($(this).val() === "1") {
-				$('#sidebar').show();
-				$('head').append('<link id="donations_styles" rel="stylesheet" href="css/donations.css"/>');
-			} else {
-				$('#sidebar').hide();
-				$('#donations_styles').remove();
-			}
-		})
-
-
 		/* 	placeholder text
 			on focus: if the value matches the title, clear it
 			on blur: if the value is empty, populate with the title

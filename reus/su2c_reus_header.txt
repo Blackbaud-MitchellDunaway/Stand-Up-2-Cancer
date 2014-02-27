@@ -1,0 +1,35 @@
+<!-- su2c_reus_logo -->
+[[S51:su2c_reus_logo]]			
+
+<!-- su2c_reus_tagline -->
+[[S51:su2c_reus_tagline]]
+
+<div id="social_share">
+
+	<!-- su2c_reus_facebook_like -->
+	[[S51:su2c_reus_facebook_like]]
+
+	<!-- su2c_reus_twitter_follow -->
+	[[S51:su2c_reus_twitter_follow]]
+
+</div><!-- /#social_share -->
+
+<a id="nav_reveal" class="img-replace" href="#" title="Click to Open Navigation">Click to Open Navigation</a>
+
+<div id="header_utilities">
+
+	<!-- su2c_reus_donate_button -->
+	[[S51:su2c_reus_donate_button]]
+	
+	<nav id="main_navigation">
+		<!-- su2c_reus_nav -->
+		[[S51:su2c_reus_nav]]
+	</nav>
+	
+	<div id="login_wrap"  class="">
+		<!-- su2c_reus_log_in -->
+		[[S51:su2c_reus_log_in]]
+
+	</div> <!-- /#login_wrap -->
+
+</div><!-- /#header_utilities -->
