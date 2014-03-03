@@ -54,6 +54,14 @@ Y.use('jquery-noconflict', function() {
 			$('body').unbind('click touchstart');
 		}
 
+		/* 	GIGYA wrangling
+		------------------------------------------------------------ */
+		$('#gigya_widget').ready(function(){
+			$('.loginText .loginHref').html('Login Using <img src="../EIF/su2c/images/gigya.gif" class="loginLinks" alt="Gigya">');
+			$('[id$="loginLinks"]').remove();
+
+		});
+		
 
 
     }); //end jQuery(document).ready()
