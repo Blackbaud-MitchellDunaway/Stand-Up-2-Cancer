@@ -30,15 +30,17 @@ Y.use('jquery-noconflict', function() {
 					remove body click handler
 		------------------------------------------------------------ */
 
-		$('#nav_reveal, #nav_reveal::after').click(function(e){
+
+		$('#nav_reveal, .loginHref').click(function(e){
 			e.preventDefault();
 			var elements = $('#header_utilities, #nav_reveal');
-			if (elements.hasClass('active')) {
+			if (elements.hasClass('active')) {				
 				panel_hide(elements);
 			} else {
 				panel_show(elements);
 			}
-		})
+		});
+
 
 		function panel_show(elements){
 			elements.addClass('active');
@@ -56,10 +58,8 @@ Y.use('jquery-noconflict', function() {
 
 		/* 	GIGYA wrangling
 		------------------------------------------------------------ */
-		$('#gigya_widget').ready(function(){
-			$('.loginText .loginHref').html('Login Using <img src="../EIF/su2c/images/gigya.gif" class="loginLinks" alt="Gigya">');
-			$('[id$="loginLinks"]').remove();
-
+		$('#gigya_widget').ready(function(){			
+			$('.loginText .loginHref').html('Login Using');
 		});
 		
 

@@ -251,14 +251,17 @@ header.top-level {
 
 #social_share {
 	top: 3px;
-	right: 28px;
-	height: 24px;
-	width: 156px;
+	right: 10px;
+	width: auto;
 }
 
 .fb_iframe_widget {
 	float: left;
 	margin-right: 10px;
+}
+
+#twitter-widget-0 {
+	float: right;
 }
 
 #nav_reveal {
@@ -270,14 +273,13 @@ header.top-level {
 	height: 29px;
 	width: 174px;
 	top: 33px;
-	right: 310px;
+	right: 335px;
 }
 
 /* Login
 -----------------------------------------------------------------------*/
 
 #login_wrap {
-	width: 260px;
 	font-size: 12px;
 	top: 30px;
 	right: 10px;
@@ -288,11 +290,22 @@ header.top-level {
 #login_wrap a:link,
 #login_wrap a:visited {
 	font-weight: bold;
-	padding-right: 1em;
 	font-size: 11px;
 }
 
+.login-inputs {
+	text-align: right;
+	margin-right: -6px;
+}
+
 /* logged out */
+
+#lLogonForm a,
+#lLogonForm a:active,
+#lLogonForm a:link,
+#lLogonForm a:visited {
+	padding-right: 1em;
+}
 
 #login_wrap input[type="text"],
 #login_wrap input[type="password"] {
@@ -322,7 +335,21 @@ header.top-level {
 	display: inline;
 }
 
+#gigya_widget .loginLinks {
+	display: inline;
+}
+
+#gigya_widget .loginLinks a {
+	padding: 0;
+}
+
 /* logged in */
+
+#login_logged_in a.pbm {
+	padding-right: .5em;
+	border-right: 1px solid #666;
+	margin-right: .5em;
+}
 
 #login_logged_in {
 	text-align: right;
@@ -643,6 +670,19 @@ footer.top-level a:visited strong{
 		padding: 0;
 	}
 
+	#gigya_widget > div,
+	#gigya_widget .loginText {
+		display: inline;
+	}
+
+	#gigya_widget a, 
+	#gigya_widget a:active, 
+	#gigya_widget a:link, 
+	#gigya_widget a:visited {
+		display: inline;
+	}
+
+
 	/* logged out */
 
 	#login_wrap input[type="text"],
@@ -682,7 +722,13 @@ footer.top-level a:visited strong{
 	#login_salutation,
 	#logout_button {
 		float: none;
+		text-align: center;
 	}
+
+	#login_logged_in a.pbm {
+		border-right: none;
+	}
+
 
 	/* Footer
 	-----------------------------------------------------------------------*/

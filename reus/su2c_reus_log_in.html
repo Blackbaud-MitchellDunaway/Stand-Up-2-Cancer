@@ -1,20 +1,28 @@
 [[?xxnullxx::x[[S1:user_name]]x::
 <form action="UserLogin" id="lLogonForm" name="lLogonForm" method="post">
-	<input type="text" name="USERNAME" id="USERNAME" size="8" maxlength="[[S0:USER_MAX_LOGIN_LEN]]" title="User Name" value="User Name"/>
-	<input type="password" name="Password" id="Password" size="8" maxlength="[[S0:USER_MAX_PASSWD_LEN]]" title="Password" value="Password"/>
-	<input type="submit" name="login" id="login_button" />
-	<input type="hidden" name="NEXTURL" value="[[S8]]"/>
+	<div class="login-inputs">
+		<input type="text" name="USERNAME" id="USERNAME" size="8" maxlength="[[S0:USER_MAX_LOGIN_LEN]]" title="User Name" value="User Name"/>
+		<input type="password" name="Password" id="Password" size="8" maxlength="[[S0:USER_MAX_PASSWD_LEN]]" title="Password" value="Password"/>
+		<input type="submit" name="login" id="login_button" />
+		<input type="hidden" name="NEXTURL" value="[[S8]]"/>
+	</div>
 	<a href="UserLogin">Forgot password?</a>
 	<span id="gigya_widget">[[S202]]</span>
+
 </form>
 
 ::
 
 <div id="login_logged_in">
-	<span id="login_salutation">Welcome, [[S1:first_name]]</span>
-	<a id="logout_button" class="img-replace" href="UserLogin?logout=sign+off&NEXTURL=[[T1:[[S8]]]]">Logout</a>
-	<a href="[[S11:81=ConsProfileUser]]">My Profile</a>
-	[[?xx::x[[E48:[[S80:trID]]:part-type-id]]x::::<a href="TRC?pg=center&fr_id=[[S80trID]]">Participant Center</a>]]
+	<div class="login-inputs">
+		<span id="login_salutation">Welcome, [[S1:first_name]]</span>
+		<a id="logout_button" class="img-replace" href="UserLogin?logout=sign+off&NEXTURL=[[T1:[[S8]]]]">Logout</a>
+	</div>
+	<a class="pbm" href="[[S11:81=ConsProfileUser]]">Manage Profile</a>
+	<a href="#">Participant Center</a>
+
+
+	<!--[[?xx::x[[E48:[[S80:trID]]:part-type-id]]x::::<a href="TRC?pg=center&fr_id=[[S80trID]]">Participant Center</a>]]-->
 </div>
 
 ]]
