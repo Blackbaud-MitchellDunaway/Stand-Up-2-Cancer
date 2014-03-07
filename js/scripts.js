@@ -63,6 +63,39 @@ Y.use('jquery-noconflict', function() {
 		});
 		
 
+		/* 	Donation Level Selecting
+		------------------------------------------------------------ */
+
+		$('.donation-level-input-container label, .donation-level-input-container input').click(function(e){
+			
+			$('.donation-level-input-container label').each(function(){
+				$(this).removeClass('active');
+			});
+			
+			$(this).closest('.donation-level-input-container').find('label').addClass('active');
+			
+		});
+
+		$('.donation-level-container:eq(3)').find('label:eq(0)').addClass('donor-entered-label');
+
+
+		/* 	Append SU2C acknowledgement letter 
+			language in Donation form honor field area
+		------------------------------------------------------------ */
+
+		$('#tribute_type_row').after('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
+
+		/* 	Reorder credit card icons
+		------------------------------------------------------------ */
+		var cardList = [];
+		$('.radio-array-list li').each(function(){
+		  cardList.push(this);  
+		});
+		var lastCard = cardList.pop();
+		cardList.unshift(lastCard);
+		$('.radio-array-list').html(cardList);
+
+
 
     }); //end jQuery(document).ready()
 }); //end Y.use('jquery-noconflict')

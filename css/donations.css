@@ -13,6 +13,193 @@ main {
 	width: 70%;
 }
 
+main div.donation-form-container.responsive {
+	background: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	padding: 0;
+	width: 100%;
+}
+
+/* overwriting unwanted styles */
+
+main fieldset {
+	line-height: 2em;
+}
+
+main div.responsive input {
+	vertical-align: middle;
+}
+/* Headings
+-----------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	color: #333;
+}
+
+h1 {
+	padding: 0;
+	background: none;
+	border-bottom: none;
+	margin: 20px 0 10px;
+}
+
+h2.section-header-container {
+	font: 21px/1.4em Arial, Helvetica, sans-serif;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: none;
+	text-transform: none;
+}
+
+h3 {
+	padding: 0;
+	background: none;
+}
+
+/* Donation Levels
+-----------------------------------------------------------------------*/
+
+/* overrides */
+
+main div.responsive div.form-content {
+	margin: 0;
+}
+
+main div.donation-level-input-container, 
+main div.generic-repeat-label-checkbox-container {
+	padding: 0;
+}
+
+main .donation-level-container div.donation-level-user-entered {
+	margin: 0;
+}
+
+/* end overrides */
+
+
+main div.donation-level-container {
+	float: left;
+	border: none;
+}
+
+.donation-level-input-container.form-input {
+	position: relative;
+}
+
+/* radio buttons */
+.donation-level-label-input-container {
+	position: absolute;
+	top: 1em;
+	left: .5em;
+}
+
+/* button look and feel */
+.donation-level-input-container label,
+#tribute_show_honor_fields_row .form-content {
+	background: #a3a7aa;
+	background: -moz-linear-gradient(top,  #a3a7aa 0%, #75797b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3a7aa), color-stop(100%,#75797b));
+	background: -webkit-linear-gradient(top,  #a3a7aa 0%,#75797b 100%);
+	background: -o-linear-gradient(top,  #a3a7aa 0%,#75797b 100%);
+	background: -ms-linear-gradient(top,  #a3a7aa 0%,#75797b 100%);
+	background: linear-gradient(to bottom,  #a3a7aa 0%,#75797b 100%);
+	float: left;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-clip: padding-box;
+	color: #FFF;
+	padding: 1em 1em 1em 2em;
+}
+
+.donation-level-input-container label {
+	margin: 0 .5em .5em 0;
+	text-shadow: 0px -1px 1px #666;
+
+}
+
+.donation-level-input-container label:hover {
+	color: #333;
+	background: #a4a8ab;
+	text-shadow: none;
+}
+
+.donation-level-input-container label.active{
+	background: #d34801;
+	-webkit-box-shadow: inset 3px 3px 6px 0px rgba(0,0,0,.1);
+	box-shadow: inset 3px 3px 6px 0px rgba(0,0,0,.1);
+}
+
+/* donor entered amount */
+main div.donation-level-container:last-child {
+	clear: left;  
+}
+
+.donation-level-user-entered label {
+	display: none;
+}
+
+div.responsive .donation-level-user-entered input[type="text"] {
+	position: absolute;
+	left: 2em;
+	top: 2.5em;
+}
+
+main label.donor-entered-label {
+	padding: 1em 5em 3em 2em;
+}
+
+/* tribute toggle */
+#tribute_show_honor_fields_row {
+	height: 4em;
+}
+
+#tribute_show_honor_fields_row .form-content{
+	padding: 1em;
+	display: inline-block;
+	font-weight: bold;
+}
+
+/* Donation Button
+-----------------------------------------------------------------------*/
+#ProcessForm div.button-container {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.responsive button.step-button.action-button.finish-step {
+  color: #fff;
+  background: #d9534f;
+  border: 3px solid #FFF;
+  -moz-box-shadow: 0px 0px 12px #707070;
+  -webkit-box-shadow: 0px 0px 12px #707070;
+  box-shadow: 0px 0px 12px #707070;
+  text-transform: uppercase;
+  font: 22px/1.4em 'texgyreadventor', "Avant Garde", Avantgarde, sans-serif;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  float: none;
+  max-width: none;
+}
+
+div.responsive button.step-button.action-button.finish-step:hover{
+  color: #fff;
+  background: #d2322d;
+  border-color: #ac2925;
+}
+
+
 /* Sidebar
 -----------------------------------------------------------------------*/
 
@@ -55,7 +242,7 @@ main {
 
 @viewport{
 	width: extend-to-zoom;
-    zoom: 1.0;    
+	zoom: 1.0;    
 }
 
 @media only screen and (min-width: 0) {
@@ -78,13 +265,27 @@ main {
 
 @media only screen and (max-width: 767px) {
 
-
+	.mobile div.responsive div.form-content {
+		margin: 0;
+	}
 
 }
 
 @media only screen and (max-width: 479px) {
 
+	main div.form-row div.form-content {
+		display: block;
+	}
 
+	main div.donation-level-container {
+		float: none;
+	}
+
+	main div.donation-level-input-container, 
+	main div.generic-repeat-label-checkbox-container,
+	main .donation-level-input-container label {
+		width: 100%;
+	}
 	
 }
 
