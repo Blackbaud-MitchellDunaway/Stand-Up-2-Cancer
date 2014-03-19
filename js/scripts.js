@@ -65,6 +65,12 @@ Y.use('jquery-noconflict', function() {
 
 		/* 	Donation Level Selecting
 		------------------------------------------------------------ */
+		
+		$("input:[name='level_flexibleexpanded']").each(function() {
+			if($(this).is(':checked')){
+				$(this).parent().next('label').addClass('active');
+			}
+		});
 
 		$('.donation-level-input-container label, .donation-level-input-container input').click(function(e){
 			
@@ -79,10 +85,29 @@ Y.use('jquery-noconflict', function() {
 		$('.donation-level-container:eq(3)').find('label:eq(0)').addClass('donor-entered-label');
 
 
+		/* 	Honor/memorial checkbox click function
+		------------------------------------------------------------ */
+		
+//		if ($('#tribute_show_honor_fieldsname').is(':checked')){
+//			$('#tribute_show_honor_fields_row .form-content').addClass('active');			
+//		}
+		
+//		$('#tribute_show_honor_fieldsname').click(function(e) {
+//			$('#tribute_show_honor_fields_row .form-content').removeClass('active');
+//			if ($('#tribute_show_honor_fieldsname').is(':checked')){
+//				$('#tribute_show_honor_fields_row .form-content').addClass('active');
+//			}
+//			else {
+//				$('#tribute_show_honor_fields_row .form-content').removeClass('active');
+//			}
+//
+//		});
+
 		/* 	Append SU2C acknowledgement letter 
 			language in Donation form honor field area
 		------------------------------------------------------------ */
 
+		//$('#tribute_type_row').after('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
 		$('#tribute_type_row').append('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
 
 		/* 	Reorder credit card icons
@@ -95,6 +120,10 @@ Y.use('jquery-noconflict', function() {
 		cardList.unshift(lastCard);
 		$('.radio-array-list').html(cardList);
 
+        /* Add required asterisk to Gift Type and Expiration Date fields
+		------------------------------------------------------------*/
+		jQuery('#level_flexiblegift_type_Row fieldset legend').prepend('<span class="field-required"></span>');
+		jQuery('#responsive_payment_typecc_exp_date_row .form-content label:first span.label-text').prepend('<span class="field-required"></span>&nbsp;');
 
 
     }); //end jQuery(document).ready()

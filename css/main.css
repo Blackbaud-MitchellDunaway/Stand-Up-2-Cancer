@@ -172,12 +172,15 @@ p {
 a,
 a:active,
 a:link,
-a:visited {
+a:visited,
+div.responsive a:visited, 
+div.responsive a:link {
 	color: #ff6600;
 	text-decoration: none;
 }
 
-a:hover {
+a:hover,
+div.responsive a:hover {
 	text-decoration: underline;
 }
 

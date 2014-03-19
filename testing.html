@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+			var showButton = function() {
+				jQuery('#msg_cat_photo_upload_button_label').show();
+			}
+
+jQuery(document).ready(function() {
+		
+			jQuery('#msg_cat_photo_upload_button_label').hide();
+		    jQuery('.caption').after('<div id="photo_permission"></div>');
+			jQuery('#photo_permission').append('<input type="checkbox" name="photo-permission" id="photo-permission" onclick="showButton()" />  <label for="photo-permission">I have permission to use this photo.</label>');
+			
+
+	
+});
+</script>
+
+<div class="caption"></div>
+<button type="button" id="msg_cat_photo_upload_button_label" style="display: none;">Save/Upload</button>
+
+</body>
+</html>

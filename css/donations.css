@@ -8,6 +8,10 @@ Description: Entertainment Industry Foundation - Stand Up 2 Cancer
 /* Content
 -----------------------------------------------------------------------*/
 
+html {
+	background:none;
+}
+
 main {
 	float: left;
 	width: 70%;
@@ -21,6 +25,23 @@ main div.donation-form-container.responsive {
 	border: none;
 	padding: 0;
 	width: 100%;
+}
+
+
+div.responsive {
+	font-size: inherit;
+}
+
+header.top-level {
+	height: 90px;
+}
+
+#donate_button {
+	display:none;
+}
+
+#main_navigation {
+	display:none;
 }
 
 /* overwriting unwanted styles */
@@ -52,7 +73,7 @@ h1 {
 	margin: 20px 0 10px;
 }
 
-h2.section-header-container {
+h2.section-header-container, h2.mobile {
 	font: 21px/1.4em Arial, Helvetica, sans-serif;
 	margin: 1em 0;
 	padding: 0;
@@ -61,9 +82,19 @@ h2.section-header-container {
 	text-transform: none;
 }
 
+h2.mobile {
+	display:none;
+}
+	
+
 h3 {
 	padding: 0;
 	background: none;
+}
+
+
+#payment_cc_container h3 {
+	display:none;
 }
 
 /* Donation Levels
@@ -90,6 +121,7 @@ main .donation-level-container div.donation-level-user-entered {
 main div.donation-level-container {
 	float: left;
 	border: none;
+	margin-right: 3px;
 }
 
 .donation-level-input-container.form-input {
@@ -104,6 +136,7 @@ main div.donation-level-container {
 }
 
 /* button look and feel */
+
 .donation-level-input-container label,
 #tribute_show_honor_fields_row .form-content {
 	background: #a3a7aa;
@@ -121,19 +154,22 @@ main div.donation-level-container {
 	padding: 1em 1em 1em 2em;
 }
 
-.donation-level-input-container label {
+.donation-level-input-container label,
+#tribute_show_honor_fields_row .form-content {
 	margin: 0 .5em .5em 0;
 	text-shadow: 0px -1px 1px #666;
 
 }
 
-.donation-level-input-container label:hover {
+.donation-level-input-container label:hover,
+#tribute_show_honor_fields_row .form-content:hover {
 	color: #333;
 	background: #a4a8ab;
 	text-shadow: none;
 }
 
-.donation-level-input-container label.active{
+.donation-level-input-container label.active,
+#tribute_show_honor_fields_row .form-content.active {
 	background: #d34801;
 	-webkit-box-shadow: inset 3px 3px 6px 0px rgba(0,0,0,.1);
 	box-shadow: inset 3px 3px 6px 0px rgba(0,0,0,.1);
@@ -161,6 +197,7 @@ main label.donor-entered-label {
 /* tribute toggle */
 #tribute_show_honor_fields_row {
 	height: 4em;
+	margin-top: 30px;
 }
 
 #tribute_show_honor_fields_row .form-content{
@@ -199,6 +236,9 @@ div.responsive button.step-button.action-button.finish-step:hover{
   border-color: #ac2925;
 }
 
+#tribute_type {
+	margin-bottom: 10px;
+}
 
 /* Sidebar
 -----------------------------------------------------------------------*/
@@ -237,6 +277,41 @@ div.responsive button.step-button.action-button.finish-step:hover{
 	font: 12px/16px Arial, Helvetica, sans-serif;
 }
 
+/* Error messages
+-----------------------------------------------------------------------*/
+
+div.responsive div.ErrorMessage.page-error>span.field-error-text {
+	width: auto;
+}
+
+/* Honor / Memorial section
+-----------------------------------------------------------------------*/
+
+#tribute_honoree_name_row,
+#tribute_type_row, 
+#tribute_notify_recip_name_row,
+#tribute_notify_recip_street1_row,
+#tribute_notify_recip_street2_row,
+#tribute_notify_recip_city_row,
+#tribute_notify_recip_country_row,
+#tribute_notify_recip_state_row,
+#tribute_notify_recip_zip_row,
+#tribute_message_body_row,
+#tribute_signature_row {
+	background-color: #e8e8e8;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 4px 10px 4px 15px;
+}
+
+#tribute_honoree_name_row {
+	padding-top: 10px;
+}
+
+#tribute_signature_row {
+	padding-bottom: 10px;
+}
+
 /* Responsiveness
 -----------------------------------------------------------------------*/
 
@@ -268,6 +343,47 @@ div.responsive button.step-button.action-button.finish-step:hover{
 	.mobile div.responsive div.form-content {
 		margin: 0;
 	}
+	
+	div.form-row.form-checkbox div.form-content>input {
+		vertical-align:top;
+		margin-top: 3px;
+	}
+
+	h2.section-header-container {
+		display:none;
+	}
+
+	h2.mobile {
+		display:block;
+	}
+
+	main div.donation-level-input-container, 
+	main div.generic-repeat-label-checkbox-container,
+	main .donation-level-input-container label {
+		width: 100%;
+	}
+	
+	main div.donation-level-container {
+		float:none;
+	}
+	
+	.mobile div.responsive div.form-content {
+		width: 100%;
+	}
+	
+	.mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+		/*max-width: 150px;*/
+	}
+	
+
+	/* tribute toggle */
+	#tribute_show_honor_fields_row {
+		height: 6em;
+	}
+	
+	.mobile div.html-caption-container {
+		width: auto;
+	}
 
 }
 
@@ -275,6 +391,14 @@ div.responsive button.step-button.action-button.finish-step:hover{
 
 	main div.form-row div.form-content {
 		display: block;
+	}
+
+	h2.section-header-container {
+		display:none;
+	}
+
+	h2.mobile {
+		display:block;
 	}
 
 	main div.donation-level-container {
@@ -286,6 +410,24 @@ div.responsive button.step-button.action-button.finish-step:hover{
 	main .donation-level-input-container label {
 		width: 100%;
 	}
+	
+	.mobile div.responsive div.form-content {
+		width: 100%;
+	}
+	
+	.mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+		/*max-width: 150px;*/
+	}
+	
+	/* tribute toggle */
+	#tribute_show_honor_fields_row {
+		height: 6em;
+	}
+
+	.mobile div.html-caption-container {
+		width: auto;
+	}
+
 	
 }
 
