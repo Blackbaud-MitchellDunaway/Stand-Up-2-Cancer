@@ -83,7 +83,7 @@ Y.use('jquery-noconflict', function() {
 			language in Donation form honor field area
 		------------------------------------------------------------ */
 
-		$('#tribute_type_row').after('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
+		$('#tribute_type_row').append('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
 
 		/* 	Reorder credit card icons
 		------------------------------------------------------------ */
