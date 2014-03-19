@@ -112,13 +112,18 @@ Y.use('jquery-noconflict', function() {
 
 		/* 	Reorder credit card icons
 		------------------------------------------------------------ */
-		var cardList = [];
-		$('.radio-array-list li').each(function(){
-		  cardList.push(this);  
-		});
-		var lastCard = cardList.pop();
-		cardList.unshift(lastCard);
-		$('.radio-array-list').html(cardList);
+		var credit_card_icons_closure = function () {
+			var cardList = [];
+
+			return function() {
+				$('.radio-array-list li').each(function(){
+				  cardList.push(this);  
+				});
+				cardList.unshift(cardList.pop());
+				$('.radio-array-list').html(cardList);
+
+			}();
+		}();
 
         /* Add required asterisk to Gift Type and Expiration Date fields
 		------------------------------------------------------------*/
