@@ -238,7 +238,7 @@ header.top-level {
 }
 
 #logo {
-	background: url(../images/stand-up-to-cancer.png) 0 0 no-repeat;
+	background: url(../../../images/content/pagebuilder/su2c_wrpr_logo_desktop.png) 0 0 no-repeat;
 	height: 49px;
 	width: 116px;
 	top: 25px;
@@ -557,7 +557,7 @@ footer.top-level a:visited strong{
 	}
 
 	#logo {
-		background: url(../images/stand-up-to-cancer_mobile.png) 0 0 no-repeat;
+		background: url(../../../images/content/pagebuilder/su2c_wrpr_logo_mobile.png) 0 0 no-repeat;
 		height: 37px;
 		width: 113px;
 		top: 14px;
