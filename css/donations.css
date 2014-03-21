@@ -312,6 +312,12 @@ div.responsive div.ErrorMessage.page-error>span.field-error-text {
 	padding-bottom: 10px;
 }
 
+/* MasterCard supporter text */
+
+.smallText {
+	font-size: 11px;
+}
+
 /* Responsiveness
 -----------------------------------------------------------------------*/
 

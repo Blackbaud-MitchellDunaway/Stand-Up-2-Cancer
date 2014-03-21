@@ -110,6 +110,10 @@ Y.use('jquery-noconflict', function() {
 		//$('#tribute_type_row').after('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
 		$('#tribute_type_row').append('<p>SU2C will send an acknowledgement letter in recognition of your donation if you choose to provide an address below.</p>');
 
+		/* 	Append MasterCard supporter language below credit card icons
+		------------------------------------------------------------ */
+		$('#responsive_payment_typecc_type_row').append('<p class="smallText">MasterCard is a proud supporter of Stand Up To Cancer.</p>');
+
 		/* 	Reorder credit card icons
 		------------------------------------------------------------ */
 		var credit_card_icons_closure = function () {
