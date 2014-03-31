@@ -1,0 +1,358 @@
+/* ====================================================================
+Title: Team Raiser stylesheet
+Author: Mitch Dunaway
+Creator: Blackbaud
+Description: Entertainment Industry Foundation - Stand Up 2 Cancer
+======================================================================= */
+
+/* Color Scheme
+S color: #231f20;
+U color: #ef4035;
+2 color: #f78f1e;
+C color: #ffc423;
+*/
+
+                                                                       
+/* 0VERR1DEZ 
+-----------------------------------------------------------------------*/
+
+#donate_direct_link_container,
+#entry_page_reg_team_type_container,
+#content .section-sub-header.empty {
+	display: none;
+}
+
+#content div.tr-page-container div.header-container,
+#content .section-container .section-header,
+ {
+	background: none;
+}
+
+#content .section-container,
+#content .tr-page-container,
+#content .section-footer,
+#content .TrAchievementBadgeLarge,
+#content .indicator-container {
+	border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#content div.tr-page-container div.side-bar {
+    width: 30%;
+    padding-left: 20px;
+}
+
+#content div.tr-page-container div.main-content, 
+#content div.tr-page-container div.tr-page-main-content {
+    width: 70%;
+    padding-top: 10px;
+    margin: 0;
+}
+
+div.tr-page-container div.main-content {
+	width: 720px;
+}
+
+#entry div.entry-option-info-container + div.entry-option-info-container {
+	margin-top: 0;
+}
+
+div.tr-page-container #entry_page_custom_html,
+#content div.TrAchievementBadgeLarge {
+    padding: 0;
+}
+
+#content #personal_page_menu {
+    margin: 0;
+}
+
+
+/* Headings 
+-----------------------------------------------------------------------*/
+h2.tr-page-title,
+#content .section-header-text,
+.tr-page-header h2 {
+    padding: 0px 0 20px 35px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: auto;
+    text-transform: none;
+    color: #000;
+    border-bottom: 4px solid #cbcbcb;
+    background: url(../images/h2_tr_arrow.png) no-repeat 0 0;
+    display: block;
+}
+
+#content .header-container,
+#content .section-header,
+#content .tr-page-header {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+h3 {
+    background: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+}
+
+#content div.registration-page-container div.section-sub-header {
+    background: none;
+    border: none;
+    color: #231f20;
+}
+
+/* Sidebar
+-----------------------------------------------------------------------*/
+#content .s120-social-share,
+#content .tr-status-indicator-container {
+    border: 1px solid #cdcdcd;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    background-clip: padding-box;
+    background-image: -ms-linear-gradient(top, #FFF, #f3f3f3);
+    background-image: -webkit-linear-gradient(top, #FFF, #f3f3f3);
+    background-image: -moz-linear-gradient(top, #FFF, #f3f3f3);
+    background-image: -o-linear-gradient(top, #FFF, #f3f3f3);
+    background-image: linear-gradient(top, #FFF, #f3f3f3);
+    margin: 15px 0 0;
+}
+
+#content .tr-status-indicator-container {
+    padding: 15px;
+    text-align: left;
+}
+
+.s120-social-share {
+    margin: 15px 0;
+    padding: 7px 0;
+    text-align: center;
+}
+
+div.indicator-title,
+#content .side-bar .secondary-step,
+#content .tr-status-indicator-container > a,
+#content .tr-status-indicator-container > a:active,
+#content .tr-status-indicator-container > a:link,
+#content .tr-status-indicator-container > a:visited,
+#content .tr-status-indicator-container > div:first-child > div:first-child {
+    color: #444;
+    text-transform: uppercase;
+    background: url(../images/indicator_title_arrow.png) no-repeat 0 4px;
+    padding: 0 0 0 25px;
+    font-size: 14px;
+    margin: 0;
+    border: none;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+#content .thermometer-container .thermometer-inner {
+    background-color: #ea292c;
+    background-image: -ms-linear-gradient(top, #f0787c, #ea292c);
+    background-image: -webkit-linear-gradient(top, #f0787c, #ea292c);
+    background-image: -moz-linear-gradient(top, #f0787c, #ea292c);
+    background-image: -o-linear-gradient(top, #f0787c, #ea292c);
+    background-image: linear-gradient(top, #f0787c, #ea292c);
+}
+
+/* Registration Buttons
+-----------------------------------------------------------------------*/
+
+#registration_button_wrapper {
+    text-align: center;
+}
+
+.registration_button {
+    height: 174px;
+    width: 259px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+#form_team_container {
+    background: url(../images/btn_tr-entry_form-team.gif) no-repeat 0 0;
+}
+
+#register_ind_container {
+    background: url(../images/btn_tr-entry_register-ind.gif) no-repeat 0 0;
+}
+
+#join_team_container {
+    background: url(../images/btn_tr-entry_register-text.gif) no-repeat 0 0;
+}
+
+
+
+/* Registration
+-----------------------------------------------------------------------*/
+#content div.progress-bar-step-current div.progress-bar-step-number-container {
+	background: #ffc423;
+}
+
+#content div.responsive a.next-step,
+#content div.responsive button.next-step,
+#content div.responsive button.step-button.action-button {
+    border: none;
+    background-color: #ea292c;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea292c', endColorstr='#f0787c');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea292c', endColorstr='#f0787c')";
+    background-image: -ms-linear-gradient(top, #ea292c, #f0787c);
+    background-image: -webkit-linear-gradient(top, #ea292c, #f0787c);
+    background-image: -moz-linear-gradient(top, #ea292c, #f0787c);
+    background-image: -o-linear-gradient(top, #ea292c, #f0787c);
+    background-image: linear-gradient(top, #ea292c, #f0787c);
+    color: #FFF;
+    font-family: 'texgyreadventor', "Avant Garde", Avantgarde, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#content div.responsive a.next-step:hover,
+#content div.responsive button.next-step:hover,
+#content div.responsive button.step-button.action-button {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0787c', endColorstr='#ea292c');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0787c', endColorstr='#ea292c')";
+    background-image: -ms-linear-gradient(top, #f0787c, #ea292c);
+    background-image: -webkit-linear-gradient(top, #f0787c, #ea292c);
+    background-image: -moz-linear-gradient(top, #f0787c, #ea292c);
+    background-image: -o-linear-gradient(top, #f0787c, #ea292c);
+    background-image: linear-gradient(top, #f0787c, #ea292c);
+}
+
+#content div.responsive a.next-step:active,
+#content div.responsive button.next-step:active,
+#content div.responsive button.action-button:active {
+    background: #f78f1e;
+    border-color: #f78f1e;
+}
+
+#content div.responsive button.next-step[disabled="disabled"] {
+    background-color: #ebebeb;
+    border: 1px solid #e2e2e2;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#e6e6e6');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#e6e6e6')";
+    background-image: -ms-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: -webkit-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: -o-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: linear-gradient(top, #efefef, #e6e6e6);
+    color: #FFF;
+    font-family: 'texgyreadventor', "Avant Garde", Avantgarde, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#content div.part-type-container.selected {
+    border-color: #ffc423;
+}
+
+div#user_type_login_container {
+    border: none;
+    padding: 20px;
+}
+
+/* Personal Page
+-----------------------------------------------------------------------*/
+#personal_page_image_div,
+#fr_rich_text_container {
+    float: left;
+}
+
+#personal_page_image_div {
+    width: 30%;
+}
+
+
+#fr_rich_text_container {
+    width: 70%;
+}
+
+#personal_page_menu #sidebar_donate_button {
+    background: #e92028 url(../images/donate_to_this_person.gif) no-repeat center bottom;
+    color: #FFF;
+    text-transform: uppercase;
+    -webkit-box-shadow: inset 0px 0px 14px 2px #881317;
+    box-shadow: inset 0px 0px 14px 2px #881317;
+    text-shadow: 0 0 5px #881317;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    background-clip: padding-box;
+    font-size: 18px;
+}
+
+
+/* Responsiveness
+-----------------------------------------------------------------------*/
+
+@viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;    
+}
+
+
+
+@media only screen and (max-width: 991px) {
+
+    #content div.tr-page-container div.side-bar {
+        width: 40%;;
+    }
+
+    #content div.tr-page-container div.main-content,
+    #content div.tr-page-container div.tr-page-main-content {
+        width: 60%;
+    }
+
+    .mobile div#user_type_login_container {
+        border: none;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #content div.tr-page-container div.side-bar {
+        width: 100%;
+    }
+
+    #content div.tr-page-container div.main-content,
+    #content div.tr-page-container div.tr-page-main-content {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .mobile div#user_type_login_container {
+        border: none;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+
+    .mobile div#user_type_login_container {
+        border: none;
+        padding: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

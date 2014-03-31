@@ -6,10 +6,100 @@
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="../EIF/su2c/css/reset.css"/>
+<link rel="stylesheet" href="../EIF/su2c/css/font_definition.css"/>
 <link rel="stylesheet" href="../EIF/su2c/css/main.css"/>
-[[?x9x1046x::x[[S4]]x::<link rel="stylesheet" href="../EIF/su2c/css/donations.css"/>:: <!-- nothing goes here -->]]
+[[?x9x1046x::x[[S4]]x::
+  <link rel="stylesheet" href="../EIF/su2c/css/donations.css"/>
+  [[?[[S8]]::completed::
+    <style type="text/css">
+      main {
+        width: 100%;
+      }
+    </style>
+  ::]]
+:: 
+<!-- do not load donations styles -->]]
 
-    
+[[?x26x27x28x1603x::x[[S4]]x::<link rel="stylesheet" href="../EIF/su2c/css/team_raiser.css"/>::<!-- do not load donations styles -->]]
+
+[[?x17x22x1014x1160x::x[[S4]]x::
+<!-- styles for surveys -->
+<style type="text/css">
+div.appArea {
+    width: auto;
+}
+
+.Explicit {
+    font-size: 14px;
+}
+
+td ol li {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+#ACTION_SUBMIT_SURVEY_RESPONSE {
+    height: 100%;
+    padding: 10px;
+    background: #e92028;*/ /* Old browsers 
+    background: -moz-linear-gradient(top,  #e92028 0%, #cd1c23 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e92028), color-stop(100%,#cd1c23)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e92028 0%,#cd1c23 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e92028 0%,#cd1c23 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e92028 0%,#cd1c23 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e92028 0%,#cd1c23 100%); /* W3C */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    border: 1px solid #908e8f;
+}
+
+#reset, #ACTION_CANCEL_RESPONSE_SUBMIT {
+    padding: 10px;
+    background: #f2f2f2 ; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%); /* W3C */
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #908e8f;
+}
+
+</style>
+
+<!--[if IE 9]>
+  <style type="text/css">
+    #ACTION_SUBMIT_SURVEY_RESPONSE {
+        /*IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5MjAyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZDFjMjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    }
+
+    #reset, #ACTION_CANCEL_RESPONSE_SUBMIT {
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    }
+
+  </style>
+<![endif]-->
+
+
+::]]
+
 <!-- JavaScript Files -->
 <script src="../EIF/su2c/js/html5shiv.js"></script>
 <script src="../EIF/su2c/js/html5shiv-printshiv.js"></script>
