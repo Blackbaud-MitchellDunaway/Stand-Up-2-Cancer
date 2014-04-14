@@ -132,11 +132,16 @@ Y.use('jquery-noconflict', function() {
         /* Add required asterisk to Gift Type and Expiration Date fields
 		------------------------------------------------------------*/
 		jQuery('#level_flexiblegift_type_Row fieldset legend').prepend('<span class="field-required"></span>');
-		jQuery('#responsive_payment_typecc_exp_date_row .form-content label:first span.label-text').prepend('<span class="field-required"></span>&nbsp;');	
+		jQuery('#responsive_payment_typecc_exp_date_row .form-content label:first span.label-text').prepend('<span class="field-required"></span>&nbsp;');
+		jQuery('#team_find_new_fundraising_goal .form-content').prepend('<span class="field-required"></span>&nbsp;');
+		jQuery('#part_type_fundraising_goal_input_container #fund_goal_container').prepend('<span class="field-required"></span>&nbsp;');	
 
 		/* Move Social Share widgy into the sidebar thingy...and stuff
 		------------------------------------------------------------*/
-		$('#donate_link_container').after($('[id*="shareComponent"]').addClass('s120-social-share'));
+
+		$('[id*="shareComponent"]').addClass('s120-social-share');
+		$('#donate_link_container, #personal_page_team_link_container').after($('[id*="shareComponent"]'));
+		
 
     }); //end jQuery(document).ready()
 }); //end Y.use('jquery-noconflict')
