@@ -20,7 +20,10 @@ C color: #ffc423;
 #entry_page_reg_team_type_container,
 #content .section-sub-header.empty,
 #content .part-type-name-value-separator,
-#content .part-type-fee-text {
+#content .part-type-fee-text,
+#content span.part-type-amount.option-amount,
+#content div.reg-summary-total,
+#content div.label-value-block-container.clearfix {
 	display: none;
 }
 
@@ -203,26 +206,29 @@ div.indicator-title,
 /* Registration Buttons
 -----------------------------------------------------------------------*/
 
-#registration_button_wrapper {
-    text-align: center;
+#registration_button_wrapper > div {
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #EAEAEA;
+    margin: 0 0 10px;
 }
 
 .registration_button {
     height: 174px;
     width: 259px;
-    display: inline-block;
     margin: 0 10px 10px 0;
+    float: left;
 }
 
-#form_team_container {
+#form_team_container .img-replace {
     background: url(../images/btn_tr-entry_form-team.gif) no-repeat 0 0;
 }
 
-#register_ind_container {
+#register_ind_container .img-replace {
     background: url(../images/btn_tr-entry_register-ind.gif) no-repeat 0 0;
 }
 
-#join_team_container {
+#join_team_container .img-replace {
     background: url(../images/btn_tr-entry_register-text.gif) no-repeat 0 0;
 }
 
@@ -400,6 +406,42 @@ div#user_type_login_container {
 
     .mobile #content .campaign-banner-container {
         display: block;
+    }
+
+    #registration_button_wrapper > div {
+        height: auto;
+        background: #FFAC53;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; 
+    }
+
+    .mobile #content #registration_button_wrapper p {
+        white-space: normal;
+    }
+
+    .mobile #content .registration_button {
+        height: auto;
+        width: 100%;
+        margin: 0 10px 10px 0;
+        text-indent: 0;
+        border: 1px solid #cdcdcd;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; 
+        padding: .5em;
+        text-align: center !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'texgyreadventor', "Avant Garde", Avantgarde, sans-serif;
+
+        background-clip: padding-box;
+        background: #ffffff;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmM2YzZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3));
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
+        background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%);
+        background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 100%);
     }
 
 }

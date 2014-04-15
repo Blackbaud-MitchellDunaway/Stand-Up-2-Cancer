@@ -302,15 +302,6 @@ div.thermometer-container div.total-goal-info:after {
 Y.use('jquery-noconflict', function() { 
     jQuery(document).ready(function($){
 
-        /* Adding 'goal-reached' class to thermometer
-        ---------------------------------------------------------------*/
-        var raised = parseCurrency(jQuery('.amount-raised-value').text());
-        var goal = parseCurrency(jQuery('.total-goal-value').text());
-        var percent = raised / goal;
-        if (percent >= 1) {
-            $('.thermometer-inner').addClass("goal-reached");
-        };
-
         /* Changing Personal Page title
         ----------------------------------------------------------------*/
         var participantFirstName = "[[E48:[[S334:fr-id]]-[[S334:px]]:cons.first_name]]";
@@ -330,6 +321,17 @@ Y.use('jquery-noconflict', function() {
         var newTitle = "<h2>Welcome to " + participantFirstName + " " + participantLastName + possessiveText +" Personal Page</h2>";
 
         $('#personal_page_header').html(newTitle);
+
+        /* Adding 'goal-reached' class to thermometer
+        ---------------------------------------------------------------*/
+        var raised = parseCurrency(jQuery('.amount-raised-value').text());
+        var goal = parseCurrency(jQuery('.total-goal-value').text());
+        var percent = raised / goal;
+        if (percent >= 1) {
+            $('.thermometer-inner').addClass("goal-reached");
+        };
+
+
 
     }); //end jQuery(document).ready()
 }); //end Y.use('jquery-noconflict')
