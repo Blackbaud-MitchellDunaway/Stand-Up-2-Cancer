@@ -302,12 +302,34 @@ div.thermometer-container div.total-goal-info:after {
 Y.use('jquery-noconflict', function() { 
     jQuery(document).ready(function($){
 
+        /* Adding 'goal-reached' class to thermometer
+        ---------------------------------------------------------------*/
         var raised = parseCurrency(jQuery('.amount-raised-value').text());
         var goal = parseCurrency(jQuery('.total-goal-value').text());
         var percent = raised / goal;
         if (percent >= 1) {
             $('.thermometer-inner').addClass("goal-reached");
         };
+
+        /* Changing Personal Page title
+        ----------------------------------------------------------------*/
+        var participantFirstName = "[[E48:[[S334:fr-id]]-[[S334:px]]:cons.first_name]]";
+        var participantLastName = "[[E48:[[S334:fr-id]]-[[S334:px]]:cons.last_name]]";
+
+        if(participantFirstName === "") {
+            participantFirstName = "[[S1:first_name]]";
+            participantLastName = "[[S1:last_name]]";          
+        }
+
+        var possessiveText = "'s";
+        if (participantLastName.charAt(participantLastName.length - 1) === "s") {
+            // I could use a ternary, but prefer not to
+            possessiveText = "'";
+        };
+
+        var newTitle = "<h2>Welcome to " + participantFirstName + " " + participantLastName + possessiveText +" Personal Page</h2>";
+
+        $('#personal_page_header').html(newTitle);
 
     }); //end jQuery(document).ready()
 }); //end Y.use('jquery-noconflict')

@@ -140,8 +140,10 @@ Y.use('jquery-noconflict', function() {
 		------------------------------------------------------------*/
 
 		$('[id*="shareComponent"]').addClass('s120-social-share');
-		$('#donate_link_container, #personal_page_team_link_container').after($('[id*="shareComponent"]'));
+		$('#frBadge, #frStatus1').before($('[id*="shareComponent"]'));
 		
 
     }); //end jQuery(document).ready()
 }); //end Y.use('jquery-noconflict')
+
+
